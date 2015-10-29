@@ -1,0 +1,200 @@
+$translate: 50;
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.day-01 {
+	background: #FE654F;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	.waves {
+		display: block;
+		height: 400px;
+		width: 400px;
+		border-radius: 100%;
+		margin: auto;
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;			
+		}
+
+		&::before {
+			left: -120px;
+			top: -120px;
+			width: 100%;
+			height: 100%;
+			border-radius: 100%;
+			border: 120px solid #FE654F;
+			z-index: 99;
+		}
+
+		&::after {
+			left: -10px;
+			top: -10px;
+			width: 100%;
+			height: 100%;
+			border-radius: 100%;
+			border: 10px solid #FED18C;
+			z-index: 120;
+		}
+
+		> div {
+			display: table;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+
+		span.wave-vertex {
+			position: relative;
+			top: 150px;
+			display: table-cell;
+			height: 100%;
+			background: #fff;
+
+			@for $i from 1 through 200 {
+				&:nth-child(#{$i}) {
+					animation: waveAnim 1s $i * 0.01s ease-in-out infinite;
+				}
+			}
+		}
+
+		.bubbles {
+			position: absolute;
+			width: 100%;
+			height: 170px;
+			bottom: 0;
+			left: 0;
+
+			.bubble {
+				position: absolute;
+				border-radius: 100%;
+				background: #FE654F;
+				
+				&.w-1 {
+					width: 8px;
+					height: 8px;
+					top: 68px;
+					left: 70px;
+					animation: bubblesAnim1 1s 0.5s ease-in-out infinite;
+				}
+				&.w-2 {
+					width: 10px;
+					height: 10px;
+					top: 0px;
+					left: 270px;
+					animation: bubblesAnim2 1.3s 0.2s ease-in-out infinite;
+				}
+				&.w-3 {
+					width: 12px;
+					height: 12px;
+					top: 30px;
+					left: 200px;
+					animation: bubblesAnim3 1s 1s ease-in-out infinite;
+				}
+				&.w-4 {
+					width: 15px;
+					height: 15px;
+					top: 0px;
+					left: 110px;
+					animation: bubblesAnim4 1s 0.8s ease-in-out infinite;
+				}
+				&.w-5 {
+					width: 17px;
+					height: 17px;
+					top: 60px;
+					left: 310px;
+					animation: bubblesAnim5 1.2s 0.4s ease-in-out infinite;
+				}
+			}
+		}
+	}
+}
+
+@keyframes waveAnim {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(random($translate) + px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes bubblesAnim1 {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes bubblesAnim2 {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(15px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes bubblesAnim3 {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes bubblesAnim4 {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(20px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes bubblesAnim5 {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

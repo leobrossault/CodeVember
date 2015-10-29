@@ -1,4 +1,542 @@
+html,
 body {
-  background: green; }
-  body p {
-    color: blue; }
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.day-01 {
+  background: #FE654F;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  .day-01 .waves {
+    display: block;
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    margin: auto;
+    position: relative; }
+    .day-01 .waves::before, .day-01 .waves::after {
+      content: "";
+      position: absolute; }
+    .day-01 .waves::before {
+      left: -120px;
+      top: -120px;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      border: 120px solid #FE654F;
+      z-index: 99; }
+    .day-01 .waves::after {
+      left: -10px;
+      top: -10px;
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+      border: 10px solid #FED18C;
+      z-index: 120; }
+    .day-01 .waves > div {
+      display: table;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative; }
+    .day-01 .waves span.wave-vertex {
+      position: relative;
+      top: 150px;
+      display: table-cell;
+      height: 100%;
+      background: #fff; }
+      .day-01 .waves span.wave-vertex:nth-child(1) {
+        animation: waveAnim 1s 0.01s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(2) {
+        animation: waveAnim 1s 0.02s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(3) {
+        animation: waveAnim 1s 0.03s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(4) {
+        animation: waveAnim 1s 0.04s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(5) {
+        animation: waveAnim 1s 0.05s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(6) {
+        animation: waveAnim 1s 0.06s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(7) {
+        animation: waveAnim 1s 0.07s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(8) {
+        animation: waveAnim 1s 0.08s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(9) {
+        animation: waveAnim 1s 0.09s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(10) {
+        animation: waveAnim 1s 0.1s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(11) {
+        animation: waveAnim 1s 0.11s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(12) {
+        animation: waveAnim 1s 0.12s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(13) {
+        animation: waveAnim 1s 0.13s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(14) {
+        animation: waveAnim 1s 0.14s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(15) {
+        animation: waveAnim 1s 0.15s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(16) {
+        animation: waveAnim 1s 0.16s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(17) {
+        animation: waveAnim 1s 0.17s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(18) {
+        animation: waveAnim 1s 0.18s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(19) {
+        animation: waveAnim 1s 0.19s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(20) {
+        animation: waveAnim 1s 0.2s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(21) {
+        animation: waveAnim 1s 0.21s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(22) {
+        animation: waveAnim 1s 0.22s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(23) {
+        animation: waveAnim 1s 0.23s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(24) {
+        animation: waveAnim 1s 0.24s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(25) {
+        animation: waveAnim 1s 0.25s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(26) {
+        animation: waveAnim 1s 0.26s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(27) {
+        animation: waveAnim 1s 0.27s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(28) {
+        animation: waveAnim 1s 0.28s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(29) {
+        animation: waveAnim 1s 0.29s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(30) {
+        animation: waveAnim 1s 0.3s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(31) {
+        animation: waveAnim 1s 0.31s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(32) {
+        animation: waveAnim 1s 0.32s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(33) {
+        animation: waveAnim 1s 0.33s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(34) {
+        animation: waveAnim 1s 0.34s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(35) {
+        animation: waveAnim 1s 0.35s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(36) {
+        animation: waveAnim 1s 0.36s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(37) {
+        animation: waveAnim 1s 0.37s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(38) {
+        animation: waveAnim 1s 0.38s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(39) {
+        animation: waveAnim 1s 0.39s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(40) {
+        animation: waveAnim 1s 0.4s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(41) {
+        animation: waveAnim 1s 0.41s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(42) {
+        animation: waveAnim 1s 0.42s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(43) {
+        animation: waveAnim 1s 0.43s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(44) {
+        animation: waveAnim 1s 0.44s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(45) {
+        animation: waveAnim 1s 0.45s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(46) {
+        animation: waveAnim 1s 0.46s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(47) {
+        animation: waveAnim 1s 0.47s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(48) {
+        animation: waveAnim 1s 0.48s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(49) {
+        animation: waveAnim 1s 0.49s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(50) {
+        animation: waveAnim 1s 0.5s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(51) {
+        animation: waveAnim 1s 0.51s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(52) {
+        animation: waveAnim 1s 0.52s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(53) {
+        animation: waveAnim 1s 0.53s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(54) {
+        animation: waveAnim 1s 0.54s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(55) {
+        animation: waveAnim 1s 0.55s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(56) {
+        animation: waveAnim 1s 0.56s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(57) {
+        animation: waveAnim 1s 0.57s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(58) {
+        animation: waveAnim 1s 0.58s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(59) {
+        animation: waveAnim 1s 0.59s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(60) {
+        animation: waveAnim 1s 0.6s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(61) {
+        animation: waveAnim 1s 0.61s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(62) {
+        animation: waveAnim 1s 0.62s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(63) {
+        animation: waveAnim 1s 0.63s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(64) {
+        animation: waveAnim 1s 0.64s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(65) {
+        animation: waveAnim 1s 0.65s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(66) {
+        animation: waveAnim 1s 0.66s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(67) {
+        animation: waveAnim 1s 0.67s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(68) {
+        animation: waveAnim 1s 0.68s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(69) {
+        animation: waveAnim 1s 0.69s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(70) {
+        animation: waveAnim 1s 0.7s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(71) {
+        animation: waveAnim 1s 0.71s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(72) {
+        animation: waveAnim 1s 0.72s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(73) {
+        animation: waveAnim 1s 0.73s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(74) {
+        animation: waveAnim 1s 0.74s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(75) {
+        animation: waveAnim 1s 0.75s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(76) {
+        animation: waveAnim 1s 0.76s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(77) {
+        animation: waveAnim 1s 0.77s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(78) {
+        animation: waveAnim 1s 0.78s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(79) {
+        animation: waveAnim 1s 0.79s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(80) {
+        animation: waveAnim 1s 0.8s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(81) {
+        animation: waveAnim 1s 0.81s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(82) {
+        animation: waveAnim 1s 0.82s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(83) {
+        animation: waveAnim 1s 0.83s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(84) {
+        animation: waveAnim 1s 0.84s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(85) {
+        animation: waveAnim 1s 0.85s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(86) {
+        animation: waveAnim 1s 0.86s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(87) {
+        animation: waveAnim 1s 0.87s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(88) {
+        animation: waveAnim 1s 0.88s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(89) {
+        animation: waveAnim 1s 0.89s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(90) {
+        animation: waveAnim 1s 0.9s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(91) {
+        animation: waveAnim 1s 0.91s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(92) {
+        animation: waveAnim 1s 0.92s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(93) {
+        animation: waveAnim 1s 0.93s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(94) {
+        animation: waveAnim 1s 0.94s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(95) {
+        animation: waveAnim 1s 0.95s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(96) {
+        animation: waveAnim 1s 0.96s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(97) {
+        animation: waveAnim 1s 0.97s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(98) {
+        animation: waveAnim 1s 0.98s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(99) {
+        animation: waveAnim 1s 0.99s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(100) {
+        animation: waveAnim 1s 1s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(101) {
+        animation: waveAnim 1s 1.01s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(102) {
+        animation: waveAnim 1s 1.02s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(103) {
+        animation: waveAnim 1s 1.03s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(104) {
+        animation: waveAnim 1s 1.04s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(105) {
+        animation: waveAnim 1s 1.05s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(106) {
+        animation: waveAnim 1s 1.06s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(107) {
+        animation: waveAnim 1s 1.07s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(108) {
+        animation: waveAnim 1s 1.08s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(109) {
+        animation: waveAnim 1s 1.09s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(110) {
+        animation: waveAnim 1s 1.1s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(111) {
+        animation: waveAnim 1s 1.11s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(112) {
+        animation: waveAnim 1s 1.12s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(113) {
+        animation: waveAnim 1s 1.13s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(114) {
+        animation: waveAnim 1s 1.14s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(115) {
+        animation: waveAnim 1s 1.15s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(116) {
+        animation: waveAnim 1s 1.16s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(117) {
+        animation: waveAnim 1s 1.17s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(118) {
+        animation: waveAnim 1s 1.18s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(119) {
+        animation: waveAnim 1s 1.19s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(120) {
+        animation: waveAnim 1s 1.2s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(121) {
+        animation: waveAnim 1s 1.21s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(122) {
+        animation: waveAnim 1s 1.22s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(123) {
+        animation: waveAnim 1s 1.23s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(124) {
+        animation: waveAnim 1s 1.24s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(125) {
+        animation: waveAnim 1s 1.25s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(126) {
+        animation: waveAnim 1s 1.26s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(127) {
+        animation: waveAnim 1s 1.27s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(128) {
+        animation: waveAnim 1s 1.28s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(129) {
+        animation: waveAnim 1s 1.29s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(130) {
+        animation: waveAnim 1s 1.3s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(131) {
+        animation: waveAnim 1s 1.31s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(132) {
+        animation: waveAnim 1s 1.32s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(133) {
+        animation: waveAnim 1s 1.33s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(134) {
+        animation: waveAnim 1s 1.34s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(135) {
+        animation: waveAnim 1s 1.35s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(136) {
+        animation: waveAnim 1s 1.36s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(137) {
+        animation: waveAnim 1s 1.37s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(138) {
+        animation: waveAnim 1s 1.38s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(139) {
+        animation: waveAnim 1s 1.39s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(140) {
+        animation: waveAnim 1s 1.4s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(141) {
+        animation: waveAnim 1s 1.41s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(142) {
+        animation: waveAnim 1s 1.42s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(143) {
+        animation: waveAnim 1s 1.43s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(144) {
+        animation: waveAnim 1s 1.44s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(145) {
+        animation: waveAnim 1s 1.45s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(146) {
+        animation: waveAnim 1s 1.46s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(147) {
+        animation: waveAnim 1s 1.47s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(148) {
+        animation: waveAnim 1s 1.48s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(149) {
+        animation: waveAnim 1s 1.49s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(150) {
+        animation: waveAnim 1s 1.5s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(151) {
+        animation: waveAnim 1s 1.51s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(152) {
+        animation: waveAnim 1s 1.52s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(153) {
+        animation: waveAnim 1s 1.53s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(154) {
+        animation: waveAnim 1s 1.54s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(155) {
+        animation: waveAnim 1s 1.55s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(156) {
+        animation: waveAnim 1s 1.56s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(157) {
+        animation: waveAnim 1s 1.57s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(158) {
+        animation: waveAnim 1s 1.58s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(159) {
+        animation: waveAnim 1s 1.59s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(160) {
+        animation: waveAnim 1s 1.6s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(161) {
+        animation: waveAnim 1s 1.61s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(162) {
+        animation: waveAnim 1s 1.62s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(163) {
+        animation: waveAnim 1s 1.63s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(164) {
+        animation: waveAnim 1s 1.64s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(165) {
+        animation: waveAnim 1s 1.65s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(166) {
+        animation: waveAnim 1s 1.66s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(167) {
+        animation: waveAnim 1s 1.67s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(168) {
+        animation: waveAnim 1s 1.68s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(169) {
+        animation: waveAnim 1s 1.69s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(170) {
+        animation: waveAnim 1s 1.7s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(171) {
+        animation: waveAnim 1s 1.71s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(172) {
+        animation: waveAnim 1s 1.72s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(173) {
+        animation: waveAnim 1s 1.73s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(174) {
+        animation: waveAnim 1s 1.74s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(175) {
+        animation: waveAnim 1s 1.75s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(176) {
+        animation: waveAnim 1s 1.76s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(177) {
+        animation: waveAnim 1s 1.77s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(178) {
+        animation: waveAnim 1s 1.78s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(179) {
+        animation: waveAnim 1s 1.79s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(180) {
+        animation: waveAnim 1s 1.8s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(181) {
+        animation: waveAnim 1s 1.81s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(182) {
+        animation: waveAnim 1s 1.82s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(183) {
+        animation: waveAnim 1s 1.83s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(184) {
+        animation: waveAnim 1s 1.84s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(185) {
+        animation: waveAnim 1s 1.85s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(186) {
+        animation: waveAnim 1s 1.86s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(187) {
+        animation: waveAnim 1s 1.87s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(188) {
+        animation: waveAnim 1s 1.88s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(189) {
+        animation: waveAnim 1s 1.89s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(190) {
+        animation: waveAnim 1s 1.9s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(191) {
+        animation: waveAnim 1s 1.91s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(192) {
+        animation: waveAnim 1s 1.92s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(193) {
+        animation: waveAnim 1s 1.93s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(194) {
+        animation: waveAnim 1s 1.94s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(195) {
+        animation: waveAnim 1s 1.95s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(196) {
+        animation: waveAnim 1s 1.96s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(197) {
+        animation: waveAnim 1s 1.97s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(198) {
+        animation: waveAnim 1s 1.98s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(199) {
+        animation: waveAnim 1s 1.99s ease-in-out infinite; }
+      .day-01 .waves span.wave-vertex:nth-child(200) {
+        animation: waveAnim 1s 2s ease-in-out infinite; }
+    .day-01 .waves .bubbles {
+      position: absolute;
+      width: 100%;
+      height: 170px;
+      bottom: 0;
+      left: 0; }
+      .day-01 .waves .bubbles .bubble {
+        position: absolute;
+        border-radius: 100%;
+        background: #FE654F; }
+        .day-01 .waves .bubbles .bubble.w-1 {
+          width: 8px;
+          height: 8px;
+          top: 68px;
+          left: 70px;
+          animation: bubblesAnim1 1s 0.5s ease-in-out infinite; }
+        .day-01 .waves .bubbles .bubble.w-2 {
+          width: 10px;
+          height: 10px;
+          top: 0px;
+          left: 270px;
+          animation: bubblesAnim2 1.3s 0.2s ease-in-out infinite; }
+        .day-01 .waves .bubbles .bubble.w-3 {
+          width: 12px;
+          height: 12px;
+          top: 30px;
+          left: 200px;
+          animation: bubblesAnim3 1s 1s ease-in-out infinite; }
+        .day-01 .waves .bubbles .bubble.w-4 {
+          width: 15px;
+          height: 15px;
+          top: 0px;
+          left: 110px;
+          animation: bubblesAnim4 1s 0.8s ease-in-out infinite; }
+        .day-01 .waves .bubbles .bubble.w-5 {
+          width: 17px;
+          height: 17px;
+          top: 60px;
+          left: 310px;
+          animation: bubblesAnim5 1.2s 0.4s ease-in-out infinite; }
+
+@keyframes waveAnim {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(48px); }
+  100% {
+    transform: translateY(0px); } }
+
+@keyframes bubblesAnim1 {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(5px); }
+  100% {
+    transform: translateY(0px); } }
+
+@keyframes bubblesAnim2 {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(15px); }
+  100% {
+    transform: translateY(0px); } }
+
+@keyframes bubblesAnim3 {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY(0px); } }
+
+@keyframes bubblesAnim4 {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(20px); }
+  100% {
+    transform: translateY(0px); } }
+
+@keyframes bubblesAnim5 {
+  0% {
+    transform: translateY(0px); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0px); } }

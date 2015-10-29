@@ -5,7 +5,7 @@ var gulp = require('gulp'),
   connect = require('gulp-connect');
 
 gulp.task('styles', function() {
-    gulp.src('app/sass/**/*.scss')
+    gulp.src('app/sass/style.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./dist/css/'))
 });
