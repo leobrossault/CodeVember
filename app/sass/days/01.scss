@@ -1,17 +1,5 @@
 $translate: 50;
 
-html,
-body {
-	width: 100%;
-	height: 100%;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 .day-01 {
 	background: #FE654F;
 	height: 100%;
@@ -97,7 +85,7 @@ body {
 				&.w-2 {
 					width: 10px;
 					height: 10px;
-					top: 0px;
+					top: 40px;
 					left: 270px;
 					animation: bubblesAnim2 1.3s 0.2s ease-in-out infinite;
 				}
@@ -111,7 +99,7 @@ body {
 				&.w-4 {
 					width: 15px;
 					height: 15px;
-					top: 0px;
+					top: 100px;
 					left: 110px;
 					animation: bubblesAnim4 1s 0.8s ease-in-out infinite;
 				}
@@ -143,11 +131,9 @@ body {
 	0% {
 		transform: translateY(0px);
 	}
-	50% {
-		transform: translateY(5px);
-	}
 	100% {
-		transform: translateY(0px);
+		transform: translateY(-35px);
+		opacity: 0;
 	}
 }
 
@@ -155,11 +141,9 @@ body {
 	0% {
 		transform: translateY(0px);
 	}
-	50% {
-		transform: translateY(15px);
-	}
 	100% {
-		transform: translateY(0px);
+		opacity: 0;
+		transform: translateY(-45px);
 	}
 }
 
@@ -167,11 +151,9 @@ body {
 	0% {
 		transform: translateY(0px);
 	}
-	50% {
-		transform: translateY(20px);
-	}
 	100% {
-		transform: translateY(0px);
+		opacity: 0;
+		transform: translateY(-20px);
 	}
 }
 
@@ -179,11 +161,9 @@ body {
 	0% {
 		transform: translateY(0px);
 	}
-	50% {
-		transform: translateY(20px);
-	}
 	100% {
-		transform: translateY(0px);
+		opacity: 0;
+		transform: translateY(-20px);
 	}
 }
 
@@ -191,10 +171,8 @@ body {
 	0% {
 		transform: translateY(0px);
 	}
-	50% {
-		transform: translateY(10px);
-	}
 	100% {
-		transform: translateY(0px);
+		opacity: 0;
+		transform: translateY(-30px);
 	}
 }
