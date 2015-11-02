@@ -1,0 +1,160 @@
+$degree: 20deg;
+
+.day-03 {
+	background: #19323C;
+	display: flex;
+	align-items: center;
+	height: 100%;
+
+	.container {
+		width: 500px;
+		height: 500px;
+		margin: auto;
+		// animation: rotateContainer 2s infinite;
+
+		.line {
+			width: 100%;
+			display: table;
+			height: 33px;
+
+			&:nth-child(odd) {
+				.rect {
+					&:nth-child(odd) {
+						background: #F2545B;
+						animation: red 2s infinite;
+					}
+					&:nth-child(even) {
+						background: #C7EFCF;
+						animation: black 2s infinite;
+					}
+				}		
+			}
+
+			&:nth-child(even) {
+				.rect {
+					&:nth-child(odd) {
+						background: #F9C80E;
+						animation: white 2s infinite;
+					}
+					&:nth-child(even) {
+						background: #99DDC8;
+						animation: blue 2s infinite;
+					}
+				}					
+			}
+
+			.rect {
+				display: table-cell;
+				height: 100%;
+			}
+		}
+	}
+}
+
+@keyframes rotateContainer {
+	0% {
+		transform: rotate(5deg);
+	}
+	50% {
+		transform: rotate(-5deg);
+	}
+	100% {
+		transform: rotate(5deg);
+	}	
+}
+
+// @keyframes white {
+// 	0% {
+// 		transform: skew($degree) rotate($degree);
+// 	}
+// 	50% {
+// 		transform: skew(-$degree) rotate(-$degree);
+// 	}
+// 	100% {
+// 		transform: skew($degree) rotate($degree);
+// 	}
+// }
+
+// @keyframes blue {
+// 	0% {
+// 		transform: skew(-$degree) rotate(-$degree);
+// 	}
+// 	50% {
+// 		transform: skew($degree) rotate($degree);
+// 	}
+// 	100% {
+// 		transform: skew(-$degree) rotate(-$degree);
+// 	}
+// }
+
+// @keyframes black {
+// 	0% {
+// 		transform: skew(-$degree) rotate(-$degree);
+// 	}
+// 	50% {
+// 		transform: skew($degree) rotate($degree);
+// 	}
+// 	100% {
+// 		transform: skew(-$degree) rotate(-$degree);
+// 	}
+// }
+
+// @keyframes red {
+// 	0% {
+// 		transform: skew($degree) rotate($degree);
+// 	}
+// 	50% {
+// 		transform: skew(-$degree) rotate(-$degree);
+// 	}
+// 	100% {
+// 		transform: skew($degree) rotate($degree);
+// 	}
+// }
+
+@keyframes white {
+	0% {
+		transform: rotate(20deg);
+	}
+	50% {
+		transform: rotate(-20deg);
+	}
+	100% {
+		transform: rotate(20deg);
+	}
+}
+
+@keyframes blue {
+	0% {
+		transform: skew(-80deg);
+	}
+	50% {
+		transform: skew(80deg);
+	}
+	100% {
+		transform: skew(-80deg);
+	}
+}
+
+@keyframes black {
+	0% {
+		transform: rotate(-20deg);
+	}
+	50% {
+		transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(-20deg);
+	}
+}
+
+@keyframes red {
+	0% {
+		transform: skew(80deg);
+	}
+	50% {
+		transform: skew(-80deg);
+	}
+	100% {
+		transform: skew(80deg);
+	}
+}
