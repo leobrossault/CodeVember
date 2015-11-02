@@ -21,12 +21,12 @@ body {
       width: 100%;
       display: table;
       height: 33px; }
-      .day-03 .container .line:nth-child(odd) .rect:nth-child(odd) {
-        background: #F2545B;
-        animation: red 2s infinite; }
       .day-03 .container .line:nth-child(odd) .rect:nth-child(even) {
-        background: #C7EFCF;
+        background: #F2545B;
         animation: black 2s infinite; }
+      .day-03 .container .line:nth-child(odd) .rect:nth-child(odd) {
+        background: #C7EFCF;
+        animation: red 2s infinite; }
       .day-03 .container .line:nth-child(even) .rect:nth-child(odd) {
         background: #F9C80E;
         animation: white 2s infinite; }
@@ -47,32 +47,32 @@ body {
 
 @keyframes white {
   0% {
-    transform: rotate(20deg); }
+    transform: skew(20deg) rotate(20deg); }
   50% {
-    transform: rotate(-20deg); }
+    transform: skew(-20deg) rotate(-20deg); }
   100% {
-    transform: rotate(20deg); } }
+    transform: skew(20deg) rotate(20deg); } }
 
 @keyframes blue {
   0% {
-    transform: skew(-80deg); }
+    transform: skew(-20deg) rotate(-20deg); }
   50% {
-    transform: skew(80deg); }
+    transform: skew(20deg) rotate(20deg); }
   100% {
-    transform: skew(-80deg); } }
+    transform: skew(-20deg) rotate(-20deg); } }
 
 @keyframes black {
   0% {
-    transform: rotate(-20deg); }
+    transform: skew(-20deg) rotate(-20deg); }
   50% {
-    transform: rotate(20deg); }
+    transform: skew(20deg) rotate(20deg); }
   100% {
-    transform: rotate(-20deg); } }
+    transform: skew(-20deg) rotate(-20deg); } }
 
 @keyframes red {
   0% {
-    transform: skew(80deg); }
+    transform: skew(20deg) rotate(20deg); }
   50% {
-    transform: skew(-80deg); }
+    transform: skew(-20deg) rotate(-20deg); }
   100% {
-    transform: skew(80deg); } }
+    transform: skew(20deg) rotate(20deg); } }
