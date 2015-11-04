@@ -1,0 +1,92 @@
+.day-04 {
+  background: #F3F8F2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  perspective: 800px;
+  perspective-origin: 100% 100px;
+  overflow: hidden;
+
+  .wall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #597598;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -80px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 1500px 0 0 80px;
+      border-color: transparent transparent transparent #597598;
+    }
+  }
+
+  .container {
+      width: 500px;
+      height: 500px;
+      margin: auto;
+      position: relative;
+      left: 6%;
+
+      &#left {
+        transform: rotateZ(115deg) translateY(60px);
+      }
+      
+      &#right {
+        transform: rotateZ(-55deg) translateY(-140px);
+      }
+  }
+
+  .circles {
+    position: absolute;
+    border-radius: 50%;
+    top: 50px;
+
+    @for $i from 1 through 15 {
+      &:nth-child(#{$i}) {
+        width: ($i * 20px);
+        height: ($i * 20px);
+        top: ($i * 5px + 150px);
+        left: ($i * -1px + 150px);
+        z-index: 150 - $i;
+        animation: magic 1s $i * 0.1s ease-in-out infinite alternate;
+      } 
+    } 
+    
+    &.circles-right {
+      &:nth-child(odd) {
+        background: #597598;
+      }
+
+      &:nth-child(even) {
+        background: #F3F8F2;
+      }
+    }
+
+    &.circles-left {
+      &:nth-child(odd) {
+        background: #F3F8F2;
+      }
+
+      &:nth-child(even) {
+        background: #597598;
+      }
+    }
+  }
+}
+
+@keyframes magic {
+  0% {
+    
+  }
+  100% {
+    transform: rotate(150deg) translateX(10px) skew(5deg);
+  }
+}
