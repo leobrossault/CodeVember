@@ -1,3 +1,11 @@
 <div class="day-05">
-	<canvas id="canvas"></canvas>
+	<div class="container">
+		{% for j in 1..8 %}
+		<div class="geom">
+			{% for i in 1..8 %}
+			<span class="vertice vertice-{{i}}"></span>
+			{% endfor %}
+		</div>
+		{% endfor %}
+	</div>
 </div>

@@ -1,0 +1,219 @@
+$point-width: 20px;
+
+@mixin point($width) {
+	width: $width;
+	height: $width;
+	border-radius: 100%;
+}
+
+@mixin anim1($start, $number) {
+	@keyframes rotateScale#{$number} {
+		0% {
+			transform: rotate($start)
+		}
+
+		50% {
+			transform: rotate($start + 180deg) scale(0.1);
+		}
+
+		100% {
+			transform: rotate($start + 360deg) scale(1);
+		}
+	}
+}
+
+@mixin anim2($start, $number) {
+	@keyframes rotateScale#{$number} {
+		0% {
+			transform: rotate($start)
+		}
+
+		50% {
+			transform: rotate($start + -180deg) scale(0.1);
+		}
+
+		100% {
+			transform: rotate($start + -360deg) scale(1);
+		}
+	}
+}
+
+.day-05 {
+	background: #01161E;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	.container {
+		width: 500px;
+		height: 500px;
+		margin: auto;
+		position: relative;
+
+		.geom {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+
+			@for $i from 1 through 8 {
+				&:nth-child(#{$i}) {
+					transform: rotate($i * 25deg);
+
+					@if $i % 2 == 0 {
+						@include anim1($i * 20deg, $i);
+						animation: rotateScale + $i 3s $i * 0.3s ease-in-out infinite alternate, appear 3s $i * 0.3s ease-in-out forwards;
+					} @else {
+						@include anim2($i * 20deg, $i);
+						animation: rotateScale2 6s $i * 1s ease-in-out infinite alternate, appear 6s $i * 1s ease-in-out forwards;
+					}				
+				}
+			}
+
+			&:nth-child(odd) {
+				.vertice {
+					background: #0fe5b0;
+
+					&::before,
+					&::after {
+						background: #0fe5b0;
+					}
+				}
+			}
+
+			&:nth-child(even) {
+				.vertice {
+					background: #fff;
+
+					&::before,
+					&::after {
+						background: #fff;
+					}
+				}
+			}
+
+			.vertice {
+				position: absolute;
+
+				&::before,
+				&::after {
+					content: "";
+					position: absolute;
+				}
+
+				// @for $j from 1 through 8 {
+				// 	&:nth-child(#{$j}) {
+				// 		animation: heightSpan 0.5s $j * 0.5s ease-in-out infinite alternate;		
+				// 	}
+				// }
+
+				&-1,
+				&-5 {
+					height: 2px;
+					left: 166px;
+					width: 166px;
+
+					&::before {
+						left: -9px;
+						top: -9px;
+						@include point($point-width);
+					}
+
+					&::after {
+						right: -9px;
+						top: -9px;
+						@include point($point-width);
+					}
+				}
+
+				&-5 {
+					bottom: 0;
+				}
+
+				&-6,
+				&-7,
+				&-8 {
+					width: 2px;
+					left: 0;
+					height: 234px;
+				}
+
+				&-6 {
+					transform: rotate(-45deg);
+					top: 334px;
+				}
+
+				&-8 {
+					transform: rotate(-135deg);
+					top: 166px;
+				}
+
+				&-2 {
+					transform: rotate(135deg);
+					top: 166px;
+				}
+
+				&-4 {
+					transform: rotate(45deg);
+					top: 334px;
+				}
+
+				&-2,
+				&-3,
+				&-4 {
+					width: 2px;
+					right: 0;
+					height: 234px;
+				}
+
+				&-3,
+				&-7 {
+					height: 166px;
+					top: 166px;
+
+					&::before {
+						left: -9px;
+						top: -9px;
+						@include point($point-width);
+					}
+
+					&::after {
+						left: -9px;
+						bottom: -9px;
+						@include point($point-width);
+					}
+				}
+
+				&-6,
+				&-8,
+				&-2,
+				&-4 {
+					transform-origin: 0 0;
+				}
+			}
+		}
+	}
+}
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes heightSpan {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
