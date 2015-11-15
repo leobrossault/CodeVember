@@ -1,0 +1,54 @@
+$angle: 0;
+
+.day-15 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: #000;
+
+  .container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+
+    .square {
+      position: absolute;
+
+      &:nth-child(even) {
+        background: #fff;
+      }
+
+      &:nth-child(odd) {
+        background: #000;
+      }
+
+      @for $i from 1 through 18 {
+        &:nth-child(#{$i}) {
+          $size: 20px + $i * 20;
+          width: $size;
+          height: $size;
+          top: 250px - $size/2;
+          left: 250px - $size/2;
+          z-index: 150 - $i;
+          animation: rotation 5s $i * 0.1s ease-in-out infinite;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes rotation {
+  0% {
+
+  }
+
+  80% {
+    transform: rotate(720deg);
+  }
+
+  100% {
+    transform: rotate(720deg);
+  }
+}

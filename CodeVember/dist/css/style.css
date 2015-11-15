@@ -1,0 +1,159 @@
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.day-15 {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: #000; }
+  .day-15 .container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative; }
+    .day-15 .container .square {
+      position: absolute; }
+      .day-15 .container .square:nth-child(even) {
+        background: #fff; }
+      .day-15 .container .square:nth-child(odd) {
+        background: #000; }
+      .day-15 .container .square:nth-child(1) {
+        width: 40px;
+        height: 40px;
+        top: 230px;
+        left: 230px;
+        z-index: 149;
+        animation: rotation 5s 0.1s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(2) {
+        width: 60px;
+        height: 60px;
+        top: 220px;
+        left: 220px;
+        z-index: 148;
+        animation: rotation 5s 0.2s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(3) {
+        width: 80px;
+        height: 80px;
+        top: 210px;
+        left: 210px;
+        z-index: 147;
+        animation: rotation 5s 0.3s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(4) {
+        width: 100px;
+        height: 100px;
+        top: 200px;
+        left: 200px;
+        z-index: 146;
+        animation: rotation 5s 0.4s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(5) {
+        width: 120px;
+        height: 120px;
+        top: 190px;
+        left: 190px;
+        z-index: 145;
+        animation: rotation 5s 0.5s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(6) {
+        width: 140px;
+        height: 140px;
+        top: 180px;
+        left: 180px;
+        z-index: 144;
+        animation: rotation 5s 0.6s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(7) {
+        width: 160px;
+        height: 160px;
+        top: 170px;
+        left: 170px;
+        z-index: 143;
+        animation: rotation 5s 0.7s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(8) {
+        width: 180px;
+        height: 180px;
+        top: 160px;
+        left: 160px;
+        z-index: 142;
+        animation: rotation 5s 0.8s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(9) {
+        width: 200px;
+        height: 200px;
+        top: 150px;
+        left: 150px;
+        z-index: 141;
+        animation: rotation 5s 0.9s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(10) {
+        width: 220px;
+        height: 220px;
+        top: 140px;
+        left: 140px;
+        z-index: 140;
+        animation: rotation 5s 1s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(11) {
+        width: 240px;
+        height: 240px;
+        top: 130px;
+        left: 130px;
+        z-index: 139;
+        animation: rotation 5s 1.1s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(12) {
+        width: 260px;
+        height: 260px;
+        top: 120px;
+        left: 120px;
+        z-index: 138;
+        animation: rotation 5s 1.2s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(13) {
+        width: 280px;
+        height: 280px;
+        top: 110px;
+        left: 110px;
+        z-index: 137;
+        animation: rotation 5s 1.3s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(14) {
+        width: 300px;
+        height: 300px;
+        top: 100px;
+        left: 100px;
+        z-index: 136;
+        animation: rotation 5s 1.4s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(15) {
+        width: 320px;
+        height: 320px;
+        top: 90px;
+        left: 90px;
+        z-index: 135;
+        animation: rotation 5s 1.5s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(16) {
+        width: 340px;
+        height: 340px;
+        top: 80px;
+        left: 80px;
+        z-index: 134;
+        animation: rotation 5s 1.6s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(17) {
+        width: 360px;
+        height: 360px;
+        top: 70px;
+        left: 70px;
+        z-index: 133;
+        animation: rotation 5s 1.7s ease-in-out infinite; }
+      .day-15 .container .square:nth-child(18) {
+        width: 380px;
+        height: 380px;
+        top: 60px;
+        left: 60px;
+        z-index: 132;
+        animation: rotation 5s 1.8s ease-in-out infinite; }
+
+@keyframes rotation {
+  0% { }
+  80% {
+    transform: rotate(720deg); }
+  100% {
+    transform: rotate(720deg); } }
