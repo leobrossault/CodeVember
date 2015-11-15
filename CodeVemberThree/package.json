@@ -1,0 +1,32 @@
+{
+  "name": "three-starter",
+  "version": "1.0.0",
+  "description": "Three JS starter kit",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev:script & npm run dev:server",
+    "dev:script": "watchify -t babelify app/index.js -o dist/main.js",
+    "dev:server": "browser-sync start --server --files './' --port 5000 --no-ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leobrossault/Three-Starter.git"
+  },
+  "author": "Leo Brossault",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leobrossault/Three-Starter/issues"
+  },
+  "homepage": "https://github.com/leobrossault/Three-Starter#readme",
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.1.20",
+    "babel-preset-es2015": "^6.1.18",
+    "babelify": "^7.2.0",
+    "browser-sync": "^2.10.0",
+    "browserify": "^12.0.1",
+    "domready": "^1.0.8",
+    "raf": "^3.1.0",
+    "three": "^0.73.0",
+    "watchify": "^3.6.0"
+  }
+}
