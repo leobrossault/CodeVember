@@ -5,13 +5,13 @@ export default class Sphere extends THREE.Object3D {
 	constructor(radius, width, height) {
 		super ();
 		this.geom = new THREE.SphereGeometry(radius , width, height);
-	    this.mat = new THREE.MeshPhongMaterial({color: 0x000000, wireframe: true});
+	    this.mat = new THREE.MeshPhongMaterial({color: 0x000000, transparent: true, opacity: 0});
 	    this.mesh = new THREE.Mesh(this.geom, this.mat);
 	    this.points = [];
 
 	    for (let i = 0; i < this.geom.vertices.length; i ++) {
 	    	let rand = Math.floor(Math.random() * 10);
-	    	if (rand > 5) {
+	    	if (rand > 6) {
 	    		let point = new Point(this.geom.vertices[i].x, this.geom.vertices[i].y, this.geom.vertices[i].z);
 	    		this.points.push(point);
 	    		this.add(point);

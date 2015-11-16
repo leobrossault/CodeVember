@@ -20,7 +20,7 @@ export default class Scene {
 	    this.renderer.setSize(width, height);
 	    document.body.appendChild(this.renderer.domElement);
 
-	    this.axes = new THREE.AxisHelper(30);
+	    // this.axes = new THREE.AxisHelper(30);
 
 	    /* VAR */
 
